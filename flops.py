@@ -14,3 +14,5 @@ input = torch.randn(1, 3, 224, 224)
 macs, params = profile(model, inputs=(input, ))
 macs, params = clever_format([macs, params], "%.2f")
 print(macs, params)
+
+print("end")
